@@ -1,0 +1,3 @@
+SenhaEmail.php
+.DS_Store
+Thumbs.db

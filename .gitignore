@@ -1,0 +1,31 @@
+# Projeto Alpha — PWE II
+
+Sistema web desenvolvido em PHP com controle de sessões (`$_SESSION`), persistência de dados em MySQL via PDO e recuperação de senha autenticada via SMTP (`PHPMailer`).
+
+---
+
+## Funcionalidades
+
+* **Autenticação e Sessão (`SESSION_LOGIN.php`):** Validação de usuário e senha na tabela `TB_USUARIO`, carregamento automático dos dados do último pedido (`NOME_PEDIDO` e `CPF_PEDIDO`) e direcionamento para cadastro ou recuperação de acesso.
+* **Recuperação de Senha (`SESSION_ESQUECEU.php`):** Consulta da senha cadastrada pelo e-mail informado e disparo automático para a caixa de entrada do usuário utilizando `PHPMailer` via SMTP do Gmail (`smtp.gmail.com`, porta `587`, TLS).
+* **Cadastro e Atualização de Usuário (`SESSION_CADASTRO.php`):** Registro de novos usuários (`INSERT`) ou edição de credenciais de usuários já autenticados (`UPDATE`) com confirmação de senha e manutenção dos dados em sessão.
+* **Fluxo de Pedidos e Gerenciamento (`SESSION_BANCO.php`, `SESSION_PEDIDO.php`, `SESSION_GERENCIAR.php`):** Registro de simulações financeiras vinculadas ao usuário (`TB_PEDIDO`), cálculo de rendimentos e consulta/alteração de dados cadastrais e histórico de pedidos.
+
+---
+
+## Estrutura de Arquivos
+
+```text
+projeto-alpha/
+├── phpmailer/
+│   ├── class.phpmailer.php
+│   └── class.smtp.php
+├── CONEXAO.PHP
+├── SenhaEmail.php
+├── SESSION_LOGIN.php
+├── SESSION_ESQUECEU.php
+├── SESSION_CADASTRO.php
+├── SESSION_BANCO.php
+├── SESSION_PEDIDO.php
+├── SESSION_GERENCIAR.php
+└── style.css
