@@ -3,6 +3,7 @@
 <head>
 	<title>Esqueceu a Senha</title>
 	<meta charset="utf-8">
+	<link rel="stylesheet" href="style.css">
 	<link rel="icon" href="https://julio-basilio.github.io/Universal/Sahur.ico" type="image/x-icon">   
 </head>
 <body>
@@ -22,7 +23,7 @@ if (isset($_POST['Botao']) && $_POST['Botao'] == "Enviar Senha")
 		$dados = $Comando->fetch(PDO::FETCH_ASSOC);
 		$senhaRecuperada = $dados['SENHA_USUARIO'];
 
-		// --- INÍCIO DA MUDANÇA (Substituição do @mail pelo PHPMailer) ---
+		
 		include "SenhaEmail.php";
 		require_once("phpmailer/class.phpmailer.php");
 

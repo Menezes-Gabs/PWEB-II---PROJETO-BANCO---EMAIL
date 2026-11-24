@@ -36,14 +36,14 @@ else {
 			<select name="nome_banco" id="Banco"><br>
 			<option default value="Selecione">Selecione seu banco!!</option>
             <option value="Banco do Brasil">Banco do Brasil</option>
-            <option value="Banco Caixa Econ�mica Federal">Caixa Econ�mica Federal</option>
-            <option value="Banco Ita�">Banco Ita�</option>
-            <option value="Banco Santander">Banco santander</option>
+            <option value="Banco Caixa Economica Federal">Caixa Economica Federal</option>
+            <option value="Banco Itau">Banco Itau</option>
+            <option value="Banco Santander">Banco santander</option>            
             </select> <br></p>
  <p>Digite sua Conta: <br><input type="text" name="conta_banco"><br></p>
  <p>Digite o Capital (aplicado): <br><input type="text" name="capital_banco"><br></p>
 
- <P>Selecione a taxa (ao m�s)::<br>
+ <P>Selecione a taxa (ao mes)::<br>
             <select name="taxa_banco" id="Taxa"><br>
             <option default value="Selecione">Selecione a taxa!!</option>
             <option value="0.50">0,50 %</option>
@@ -57,13 +57,13 @@ else {
             <option value="3.50">3,50 %</option>
             <option value="4.00">4,00 %</option>
             <option value="4.50">4,50 %</option>
-            <option value="5.00">5,00 %</option>
+            <option value="5.00">5,00 %</option>            
             </select> <br></p>
  
  <P>Selecione o tempo (em meses):<br>
             <select name="tempo_banco" id="Taxa"><br>
             <option default value="Selecione">Selecione quantos meses!!</option>
-            <option value="1">1 M�s</option>
+            <option value="1">1 Mes</option>
             <option value="2">2 Meses</option>
             <option value="3">3 Meses</option>
             <option value="4">4 Meses</option>
